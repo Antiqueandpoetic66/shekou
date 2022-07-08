@@ -23,8 +23,8 @@ sct_token = ""  # Sendkey
 # Ticket Stuff
 startSite = "SK"  # 始发站点
 endSite = "HKA"  # 目标站点
-startDate = "2022-09-01"  # 船票搜索日期
-endDate = "2022-09-20"
+startDate = "2022-10-01"  # 船票搜索日期
+endDate = "2022-10-30"
 show_available_only = True  # 只显示有票的日期
 # ==================================
 
@@ -69,7 +69,7 @@ if __name__ == '__main__':
             ret = request_sail_ticket(request_param={
                 "startSite": startSite,  # 蛇口港
                 "endSite": endSite,  # 香港机场
-                "toDate": date = 9.17  # 乘船日期
+                "toDate": date  # 乘船日期
             },
                 show_available_only=show_available_only)
             if ret is not None and ret != -1:
