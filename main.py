@@ -69,7 +69,7 @@ if __name__ == '__main__':
             ret = request_sail_ticket(request_param={
                 "startSite": startSite,  # 蛇口港
                 "endSite": endSite,  # 香港机场
-                "toDate": date  # 乘船日期
+                "toDate": date = 9.17  # 乘船日期
             },
                 show_available_only=show_available_only)
             if ret is not None and ret != -1:
